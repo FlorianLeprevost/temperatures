@@ -1,14 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 17 11:26:41 2019
+#program that convert Fahrencheit to cellcius and vice versa
+# put F ou C as first arg, and put number as second arg
 
-@author: install
-"""
 
 import sys
 if sys.argv[1]=="F":
     temp = (int(sys.argv[2]) - 32)*5/9
-    print(temp, " °C")
+    print(round(temp,2), " °C")
 if sys.argv[1] == "C":
     temp = int(sys.argv[2]) *9/5 + 32
-    print(temp, " °F")
+    print(f"{temp:.3f} °F")
